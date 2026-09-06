@@ -1,344 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Jobs - GovtJobsIndia</title>
-
-    <meta name="description"
-          content="Search and filter the latest government jobs in India.">
-
-    <link rel="stylesheet"
-          href="assets/css/style.css">
-
+    <meta name="description" content="Search and filter the latest government jobs in India.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-
 <header class="site-header">
-
     <div class="container nav-container">
-
         <a href="index.html" class="logo">
             <span class="logo-icon">G</span>
             <span>GovtJobsIndia</span>
         </a>
-
-        <button class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open menu">
-            ☰
-        </button>
-
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
         <nav class="main-nav" id="mainNav">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="jobs.html" class="active">
-                Government Jobs
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="jobs.html" class="active">Government Jobs</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
-
     </div>
-
 </header>
 
-
 <main>
-
     <section class="page-hero">
-
         <div class="container">
-
-            <span class="section-label">
-                Find Your Opportunity
-            </span>
-
-            <h1>
-                Government Jobs in India
-            </h1>
-
-            <p>
-                Search, filter and explore government job opportunities.
-            </p>
-
+            <span class="section-label">Find Your Opportunity</span>
+            <h1>Government Jobs in India</h1>
+            <p>Search, filter and explore government job opportunities.</p>
         </div>
-
     </section>
-
 
     <section class="section">
-
         <div class="container">
-
             <!-- FILTERS -->
-
             <div class="filter-panel">
-
                 <div class="filter-search">
-
-                    <label for="jobSearch">
-                        Search
-                    </label>
-
-                    <input
-                        type="text"
-                        id="jobSearch"
-                        placeholder="Search job title or organization..."
-                    >
-
+                    <label for="jobSearch">Search</label>
+                    <input type="text" id="jobSearch" placeholder="Search job title or organization...">
                 </div>
-
-
                 <div class="filter-group">
-
-                    <label for="categoryFilter">
-                        Category
-                    </label>
-
+                    <label for="categoryFilter">Category</label>
                     <select id="categoryFilter">
-
-                        <option value="">
-                            All Categories
-                        </option>
-
+                        <option value="">All Categories</option>
                     </select>
-
                 </div>
-
-
                 <div class="filter-group">
-
-                    <label for="locationFilter">
-                        Location
-                    </label>
-
+                    <label for="locationFilter">Location</label>
                     <select id="locationFilter">
-
-                        <option value="">
-                            All Locations
-                        </option>
-
+                        <option value="">All Locations</option>
                     </select>
-
                 </div>
-
-
                 <div class="filter-group">
-
-                    <label for="qualificationFilter">
-                        Qualification
-                    </label>
-
+                    <label for="qualificationFilter">Qualification</label>
                     <select id="qualificationFilter">
-
-                        <option value="">
-                            All Qualifications
-                        </option>
-
+                        <option value="">All Qualifications</option>
                     </select>
-
                 </div>
-
-
                 <div class="filter-group">
-
-                    <label for="salaryFilter">
-                        Salary
-                    </label>
-
+                    <label for="salaryFilter">Salary</label>
                     <select id="salaryFilter">
-
-                        <option value="">
-                            Any Salary
-                        </option>
-
-                        <option value="20000">
-                            ₹20,000+
-                        </option>
-
-                        <option value="30000">
-                            ₹30,000+
-                        </option>
-
-                        <option value="50000">
-                            ₹50,000+
-                        </option>
-
-                        <option value="80000">
-                            ₹80,000+
-                        </option>
-
+                        <option value="">Any Salary</option>
+                        <option value="20000">₹20,000+</option>
+                        <option value="30000">₹30,000+</option>
+                        <option value="50000">₹50,000+</option>
+                        <option value="80000">₹80,000+</option>
                     </select>
-
                 </div>
-
-
                 <div class="filter-group">
-
-                    <label for="sortFilter">
-                        Sort By
-                    </label>
-
+                    <label for="sortFilter">Sort By</label>
                     <select id="sortFilter">
-
-                        <option value="newest">
-                            Newest
-                        </option>
-
-                        <option value="deadline">
-                            Deadline Soon
-                        </option>
-
-                        <option value="vacancies">
-                            Most Vacancies
-                        </option>
-
-                        <option value="title">
-                            Job Title
-                        </option>
-
+                        <option value="newest">Newest</option>
+                        <option value="deadline">Deadline Soon</option>
+                        <option value="vacancies">Most Vacancies</option>
+                        <option value="title">Job Title</option>
                     </select>
-
                 </div>
-
-
-                <button
-                    class="btn btn-secondary reset-btn"
-                    id="resetFilters">
-                    Reset
-                </button>
-
+                <button class="btn btn-secondary reset-btn" id="resetFilters">Reset</button>
             </div>
-
 
             <!-- RESULTS -->
-
             <div class="results-header">
-
                 <div>
-
-                    <h2>
-                        Available Government Jobs
-                    </h2>
-
-                    <p id="resultsCount">
-                        Loading jobs...
-                    </p>
-
+                    <h2>Available Government Jobs</h2>
+                    <p id="resultsCount">Loading jobs...</p>
                 </div>
-
             </div>
-
-
-            <div
-                class="job-list"
-                id="jobsList">
-            </div>
-
-
-            <div
-                class="pagination"
-                id="pagination">
-            </div>
-
+            <div class="job-list" id="jobsList"></div>
+            <div class="pagination" id="pagination"></div>
         </div>
-
     </section>
-
 </main>
 
-
 <footer class="site-footer">
-
     <div class="container footer-grid">
-
         <div>
-
-            <a href="index.html" class="footer-logo">
-                GovtJobsIndia
-            </a>
-
-            <p>
-                Find government employment opportunities
-                from different sectors across India.
-            </p>
-
+            <a href="index.html" class="footer-logo">GovtJobsIndia</a>
+            <p>Find government employment opportunities from different sectors across India.</p>
         </div>
-
-
         <div>
-
             <h3>Quick Links</h3>
-
             <a href="index.html">Home</a>
             <a href="jobs.html">Government Jobs</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-
         </div>
-
-
         <div>
-
             <h3>Categories</h3>
-
             <a href="jobs.html?category=Banking">Banking</a>
             <a href="jobs.html?category=Railway">Railway</a>
             <a href="jobs.html?category=Defence">Defence</a>
             <a href="jobs.html?category=Teaching">Teaching</a>
-
         </div>
-
-
         <div>
-
             <h3>Important Notice</h3>
-
-            <p class="footer-note">
-                Verify every recruitment notification and
-                eligibility requirement before applying.
-            </p>
-
+            <p class="footer-note">Verify every recruitment notification and eligibility requirement before applying.</p>
         </div>
-
     </div>
-
-
     <div class="footer-bottom">
-
         <div class="container">
-
-            <p>
-                © <span id="currentYear"></span> GovtJobsIndia.
-                All rights reserved.
-            </p>
-
+            <p>© <span id="currentYear"></span> GovtJobsIndia. All rights reserved.</p>
         </div>
-
     </div>
-
 </footer>
 
-
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
-
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
