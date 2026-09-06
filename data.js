@@ -1,0 +1,2645 @@
+/* =========================================================
+   GOVTJOBSINDIA JOB DATABASE
+   =========================================================
+
+   IMPORTANT:
+   - Add new jobs inside JOBS.
+   - Do not edit app.js for adding jobs.
+   - Use official recruitment links whenever possible.
+   - Always verify current notification before publishing.
+*/
+
+const JOBS = [
+
+    {
+        id: "bgssl-apprentice-executive-2026",
+
+        title: "BGSSL Apprentice, Executive and More",
+
+        organization: "BGSSL",
+
+        category: "Apprentice",
+
+        location: "India",
+
+        qualification: "ITI / Diploma / Graduate",
+
+        vacancies: 1949,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-30",
+
+        salary: "As per official notification",
+
+        jobType: "Government / Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "Recruitment opportunity for Apprentice, Executive and other posts.",
+
+        eligibility:
+            "Eligibility varies by post. Candidates should check the official recruitment notification.",
+
+        selection:
+            "Selection process varies by post and is subject to the official notification.",
+
+        documents:
+            "Educational certificates, identity proof, photographs and other documents specified in the notification.",
+
+        process:
+            "Read the official notification, check eligibility, complete the online application and submit the required documents.",
+
+        officialUrl: "https://www.bgssl.com/",
+
+        applyUrl: "https://www.bgssl.com/"
+
+    },
+
+
+    {
+        id: "rcfl-apprentice-2026",
+
+        title: "RCFL Graduate, Technician and Trade Apprentice",
+
+        organization: "Rashtriya Chemicals and Fertilizers Limited",
+
+        category: "Apprentice",
+
+        location: "India",
+
+        qualification: "Graduate / Diploma / ITI",
+
+        vacancies: 326,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-20",
+
+        salary: "As per apprenticeship rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "RCFL recruitment for Graduate, Technician and Trade Apprentice positions.",
+
+        eligibility:
+            "Candidates must meet the qualification and other conditions specified in the official notification.",
+
+        selection:
+            "Selection will be conducted according to the official recruitment process.",
+
+        documents:
+            "Educational certificates, identity proof and other required documents.",
+
+        process:
+            "Register through the prescribed apprenticeship/recruitment process and complete the application before the deadline.",
+
+        officialUrl: "https://www.rcfltd.com/",
+
+        applyUrl: "https://www.rcfltd.com/"
+
+    },
+
+
+    {
+        id: "rites-assistant-manager-dgm-2026",
+
+        title: "RITES Assistant Manager, DGM",
+
+        organization: "RITES Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Graduate / Engineering / Relevant Qualification",
+
+        vacancies: 12,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-30",
+
+        salary: "As per RITES recruitment rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "RITES recruitment for Assistant Manager and Deputy General Manager positions.",
+
+        eligibility:
+            "Post-wise eligibility and experience requirements apply.",
+
+        selection:
+            "Selection will follow the process specified by RITES.",
+
+        documents:
+            "Educational certificates, experience certificates and identity documents.",
+
+        process:
+            "Review the official advertisement and submit the application through the official recruitment portal.",
+
+        officialUrl: "https://www.rites.com/",
+
+        applyUrl: "https://www.rites.com/"
+
+    },
+
+
+    {
+        id: "pmbi-pharmacist-executive-2026",
+
+        title: "PMBI Pharmacist, Executive and More",
+
+        organization: "Pharmaceuticals & Medical Devices Bureau of India",
+
+        category: "Medical",
+
+        location: "India",
+
+        qualification: "Relevant Medical / Pharmacy / Graduate Qualification",
+
+        vacancies: 178,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-24",
+
+        salary: "As per official notification",
+
+        jobType: "Government Organization",
+
+        applicationMode: "Online",
+
+        description:
+            "Recruitment for Pharmacist, Executive and other positions.",
+
+        eligibility:
+            "Eligibility depends on the individual post.",
+
+        selection:
+            "Selection procedure will be as mentioned in the official notification.",
+
+        documents:
+            "Relevant educational and identity documents.",
+
+        process:
+            "Complete the application according to the official recruitment instructions.",
+
+        officialUrl: "https://www.pmbi.co.in/",
+
+        applyUrl: "https://www.pmbi.co.in/"
+
+    },
+
+
+    {
+        id: "iocl-production-manager-2026",
+
+        title: "IOCL Production Manager, Senior Production Manager and Senior Manager",
+
+        organization: "Indian Oil Corporation Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Engineering / Relevant Qualification",
+
+        vacancies: 3,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-17",
+
+        salary: "As per IOCL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "IOCL recruitment for Production Manager and senior management positions.",
+
+        eligibility:
+            "Candidates must satisfy the post-wise educational and experience requirements.",
+
+        selection:
+            "Selection process is subject to the official IOCL recruitment advertisement.",
+
+        documents:
+            "Educational certificates, experience documents and identity proof.",
+
+        process:
+            "Visit the official career section, read the advertisement and submit the application.",
+
+        officialUrl: "https://iocl.com/",
+
+        applyUrl: "https://iocl.com/"
+
+    },
+
+
+    {
+        id: "bank-of-baroda-wealth-credit-2026",
+
+        title: "Bank of Baroda Wealth Executive and Credit Analyst",
+
+        organization: "Bank of Baroda",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Relevant Professional Qualification",
+
+        vacancies: 1100,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-24",
+
+        salary: "As per Bank of Baroda rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "Bank of Baroda recruitment for Wealth Management and Credit related positions.",
+
+        eligibility:
+            "Candidates must satisfy the post-wise educational, age and experience requirements.",
+
+        selection:
+            "Selection may include shortlisting, interview or other stages as prescribed.",
+
+        documents:
+            "Educational certificates, identity proof, photograph and other required documents.",
+
+        process:
+            "Read the official advertisement and apply through the Bank of Baroda recruitment portal.",
+
+        officialUrl: "https://www.bankofbaroda.in/",
+
+        applyUrl: "https://www.bankofbaroda.in/"
+
+    },
+
+
+    {
+        id: "sbi-investment-officer-2026",
+
+        title: "SBI Investment Officer, Zonal Head and More",
+
+        organization: "State Bank of India",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Relevant Qualification",
+
+        vacancies: 207,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-25",
+
+        salary: "As per SBI rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "SBI recruitment for Investment Officer, Zonal Head and other positions.",
+
+        eligibility:
+            "Post-wise eligibility and experience conditions apply.",
+
+        selection:
+            "Selection will follow the official SBI recruitment process.",
+
+        documents:
+            "Educational and experience certificates and other required documents.",
+
+        process:
+            "Apply through the official SBI careers portal after reviewing the notification.",
+
+        officialUrl: "https://sbi.co.in/",
+
+        applyUrl: "https://sbi.co.in/"
+
+    },
+
+
+    {
+        id: "bel-iti-apprentice-2026",
+
+        title: "BEL ITI Apprentice",
+
+        organization: "Bharat Electronics Limited",
+
+        category: "Apprentice",
+
+        location: "India",
+
+        qualification: "ITI",
+
+        vacancies: null,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-26",
+
+        salary: "As per apprenticeship rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "ITI Apprentice opportunity with Bharat Electronics Limited.",
+
+        eligibility:
+            "ITI qualification and other conditions apply as mentioned in the official notification.",
+
+        selection:
+            "Selection will be conducted according to the official apprenticeship rules.",
+
+        documents:
+            "ITI certificate, identity proof and other prescribed documents.",
+
+        process:
+            "Follow BEL's official apprenticeship application instructions.",
+
+        officialUrl: "https://bel-india.in/",
+
+        applyUrl: "https://bel-india.in/"
+
+    },
+
+
+    {
+        id: "pfrda-grade-a-2026",
+
+        title: "PFRDA Officer Grade A Assistant Manager",
+
+        organization: "Pension Fund Regulatory and Development Authority",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Post Graduate / Relevant Qualification",
+
+        vacancies: 30,
+
+        posted: "2026-09-03",
+
+        deadline: "2026-09-24",
+
+        salary: "As per PFRDA rules",
+
+        jobType: "Regulatory Authority",
+
+        applicationMode: "Online",
+
+        description:
+            "PFRDA Officer Grade A recruitment for Assistant Manager positions.",
+
+        eligibility:
+            "Eligibility differs by stream. Refer to the official PFRDA advertisement.",
+
+        selection:
+            "Selection will be according to the official PFRDA recruitment process.",
+
+        documents:
+            "Educational certificates, identity documents and required application documents.",
+
+        process:
+            "Read the advertisement and apply through the official PFRDA recruitment process.",
+
+        officialUrl: "https://www.pfrda.org.in/",
+
+        applyUrl: "https://www.pfrda.org.in/"
+
+    },
+
+
+    {
+        id: "upsc-assistant-chemist-geologist-2026",
+
+        title: "UPSC Assistant Chemist, Geologist and More",
+
+        organization: "Union Public Service Commission",
+
+        category: "UPSC",
+
+        location: "India",
+
+        qualification: "Relevant Degree / Post Graduate Qualification",
+
+        vacancies: 127,
+
+        posted: "2026-09-02",
+
+        deadline: "2026-09-22",
+
+        salary: "As per Government rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "UPSC recruitment for Assistant Chemist, Geologist and other posts.",
+
+        eligibility:
+            "Post-wise educational and other eligibility conditions apply.",
+
+        selection:
+            "Selection is subject to the UPSC examination/recruitment process.",
+
+        documents:
+            "Educational certificates and other documents required by UPSC.",
+
+        process:
+            "Read the official UPSC notification and apply through the UPSC online application portal.",
+
+        officialUrl: "https://upsc.gov.in/",
+
+        applyUrl: "https://upsconline.nic.in/"
+
+    },
+
+
+    {
+        id: "mecl-technician-assistant-2026",
+
+        title: "MECL Technician, Assistant and More",
+
+        organization: "Mineral Exploration and Consultancy Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "ITI / Diploma / Graduate",
+
+        vacancies: 122,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-10-11",
+
+        salary: "As per MECL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "MECL recruitment for Technician, Assistant and other positions.",
+
+        eligibility:
+            "Post-wise qualification and experience requirements apply.",
+
+        selection:
+            "Selection procedure will follow the official recruitment notification.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Apply through the official MECL recruitment portal.",
+
+        officialUrl: "https://mecl.co.in/",
+
+        applyUrl: "https://mecl.co.in/"
+
+    },
+
+
+    {
+        id: "ssc-junior-engineer-2026",
+
+        title: "SSC Junior Engineer Examination 2026",
+
+        organization: "Staff Selection Commission",
+
+        category: "SSC",
+
+        location: "India",
+
+        qualification: "Engineering Degree / Diploma",
+
+        vacancies: 1748,
+
+        posted: "2026-09-02",
+
+        deadline: "2026-09-22",
+
+        salary: "As per Central Government rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "SSC Junior Engineer recruitment examination for eligible engineering candidates.",
+
+        eligibility:
+            "Candidates must satisfy the engineering qualification and other conditions specified by SSC.",
+
+        selection:
+            "Selection is through the SSC examination process.",
+
+        documents:
+            "Educational certificates, identity proof and required application documents.",
+
+        process:
+            "Read the SSC notification and complete the online application through the official SSC portal.",
+
+        officialUrl: "https://ssc.gov.in/",
+
+        applyUrl: "https://ssc.gov.in/"
+
+    },
+
+
+    {
+        id: "india-post-gds-2026",
+
+        title: "India Post Gramin Dak Sevak",
+
+        organization: "India Post",
+
+        category: "Post Office",
+
+        location: "India",
+
+        qualification: "10th Pass",
+
+        vacancies: 23757,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-21",
+
+        salary: "As per GDS rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "Gramin Dak Sevak recruitment opportunity under India Post.",
+
+        eligibility:
+            "Candidates must satisfy the prescribed educational, age and other requirements.",
+
+        selection:
+            "Selection is subject to the process stated in the official notification.",
+
+        documents:
+            "10th certificate, identity proof and other prescribed documents.",
+
+        process:
+            "Complete the application through the official India Post GDS recruitment portal.",
+
+        officialUrl: "https://indiapostgdsonline.gov.in/",
+
+        applyUrl: "https://indiapostgdsonline.gov.in/"
+
+    },
+
+
+    {
+        id: "gail-executive-trainee-2026",
+
+        title: "GAIL Executive Trainee",
+
+        organization: "GAIL India Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Engineering",
+
+        vacancies: null,
+
+        posted: "2026-09-04",
+
+        deadline: "2027-03-18",
+
+        salary: "As per GAIL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "Executive Trainee recruitment opportunity with GAIL.",
+
+        eligibility:
+            "Candidates must meet the qualification and other requirements specified by GAIL.",
+
+        selection:
+            "Selection follows the official GAIL recruitment process.",
+
+        documents:
+            "Educational and identity documents.",
+
+        process:
+            "Check the official GAIL careers page for the detailed recruitment procedure.",
+
+        officialUrl: "https://www.gailonline.com/",
+
+        applyUrl: "https://www.gailonline.com/"
+
+    },
+
+
+    {
+        id: "sahitya-akademi-clerk-mts-2026",
+
+        title: "Sahitya Akademi Clerk, MTS and More",
+
+        organization: "Sahitya Akademi",
+
+        category: "Other Government Jobs",
+
+        location: "India",
+
+        qualification: "10th / 12th / Graduate",
+
+        vacancies: 30,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-10-21",
+
+        salary: "As per official notification",
+
+        jobType: "Government Organization",
+
+        applicationMode: "Offline / Online",
+
+        description:
+            "Recruitment for Clerk, MTS and other positions.",
+
+        eligibility:
+            "Post-wise eligibility conditions apply.",
+
+        selection:
+            "Selection will be conducted as prescribed in the notification.",
+
+        documents:
+            "Educational certificates, identity proof and other documents.",
+
+        process:
+            "Follow the official Sahitya Akademi recruitment instructions.",
+
+        officialUrl: "https://sahitya-akademi.gov.in/",
+
+        applyUrl: "https://sahitya-akademi.gov.in/"
+
+    },
+
+
+    {
+        id: "hll-manager-agm-2026",
+
+        title: "HLL Manager, AGM and More",
+
+        organization: "HLL Lifecare Limited",
+
+        category: "Management",
+
+        location: "India",
+
+        qualification: "Graduate / Post Graduate / Relevant Qualification",
+
+        vacancies: 16,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-23",
+
+        salary: "As per HLL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "HLL recruitment for Manager, AGM and other positions.",
+
+        eligibility:
+            "Post-wise educational and experience requirements apply.",
+
+        selection:
+            "Selection process will be as stated in the official notification.",
+
+        documents:
+            "Educational certificates and experience documents.",
+
+        process:
+            "Apply through the official HLL recruitment portal.",
+
+        officialUrl: "https://www.lifecarehll.com/",
+
+        applyUrl: "https://www.lifecarehll.com/"
+
+    },
+
+
+    {
+        id: "ibps-officer-office-assistant-2026",
+
+        title: "IBPS Officer and Office Assistant",
+
+        organization: "Institute of Banking Personnel Selection",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate",
+
+        vacancies: 13706,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-21",
+
+        salary: "As per participating bank rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "IBPS recruitment for Officer and Office Assistant positions.",
+
+        eligibility:
+            "Graduate qualification and post-wise conditions apply.",
+
+        selection:
+            "Selection is conducted through the prescribed IBPS recruitment process.",
+
+        documents:
+            "Educational certificates, identity proof and other required documents.",
+
+        process:
+            "Complete the application through the official IBPS website.",
+
+        officialUrl: "https://www.ibps.in/",
+
+        applyUrl: "https://www.ibps.in/"
+
+    },
+
+
+    {
+        id: "nic-scientific-technical-assistant-2026",
+
+        title: "NIC Scientific and Technical Assistant",
+
+        organization: "National Informatics Centre",
+
+        category: "IT",
+
+        location: "India",
+
+        qualification: "Engineering / Computer Science / Relevant Qualification",
+
+        vacancies: 376,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-30",
+
+        salary: "As per Government rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "Recruitment opportunity for Scientific and Technical positions.",
+
+        eligibility:
+            "Candidates must meet the prescribed technical qualification requirements.",
+
+        selection:
+            "Selection will follow the official recruitment process.",
+
+        documents:
+            "Degree certificates, identity proof and other documents.",
+
+        process:
+            "Check the official recruitment portal and submit the application.",
+
+        officialUrl: "https://www.nic.gov.in/",
+
+        applyUrl: "https://www.nic.gov.in/"
+
+    },
+
+
+    {
+        id: "punjab-sind-bank-chief-risk-officer-2026",
+
+        title: "Punjab & Sind Bank Chief Risk Officer",
+
+        organization: "Punjab & Sind Bank",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Relevant Professional Qualification",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-12",
+
+        salary: "As per bank rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "Recruitment for Chief Risk Officer position.",
+
+        eligibility:
+            "Professional experience and qualification requirements apply.",
+
+        selection:
+            "Selection is subject to the official recruitment procedure.",
+
+        documents:
+            "Qualification and experience documents.",
+
+        process:
+            "Apply according to the official bank recruitment advertisement.",
+
+        officialUrl: "https://punjabandsindbank.co.in/",
+
+        applyUrl: "https://punjabandsindbank.co.in/"
+
+    },
+
+
+    {
+        id: "southern-railway-apprentice-2026",
+
+        title: "Southern Railway Act Apprentice",
+
+        organization: "Southern Railway",
+
+        category: "Railway",
+
+        location: "India",
+
+        qualification: "10th / ITI",
+
+        vacancies: 4471,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-27",
+
+        salary: "As per apprenticeship rules",
+
+        jobType: "Railway",
+
+        applicationMode: "Online",
+
+        description:
+            "Southern Railway Act Apprentice recruitment.",
+
+        eligibility:
+            "Candidates must meet the educational and trade requirements specified in the notification.",
+
+        selection:
+            "Selection will be conducted as per apprenticeship rules.",
+
+        documents:
+            "10th certificate, ITI certificate and identity documents.",
+
+        process:
+            "Complete the official Southern Railway apprenticeship application process.",
+
+        officialUrl: "https://sr.indianrailways.gov.in/",
+
+        applyUrl: "https://sr.indianrailways.gov.in/"
+
+    },
+
+
+    {
+        id: "nabfins-customer-service-2026",
+
+        title: "NABFINS Customer Service Officer and Executive",
+
+        organization: "NABFINS Limited",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate",
+
+        vacancies: null,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per official notification",
+
+        jobType: "Financial Services",
+
+        applicationMode: "Online",
+
+        description:
+            "Recruitment opportunity for Customer Service Officer and Executive positions.",
+
+        eligibility:
+            "Graduate qualification and other post-specific requirements apply.",
+
+        selection:
+            "Selection is subject to the official recruitment process.",
+
+        documents:
+            "Educational and identity documents.",
+
+        process:
+            "Apply through the official recruitment instructions.",
+
+        officialUrl: "https://www.nabfins.org/",
+
+        applyUrl: "https://www.nabfins.org/"
+
+    },
+
+
+    {
+        id: "bank-of-india-civil-engineer-officer-2026",
+
+        title: "Bank of India Civil Engineer, Officer and More",
+
+        organization: "Bank of India",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Engineering / Relevant Qualification",
+
+        vacancies: 205,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-25",
+
+        salary: "As per Bank of India rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "Bank of India recruitment for Civil Engineer, Officer and other positions.",
+
+        eligibility:
+            "Post-wise eligibility and experience requirements apply.",
+
+        selection:
+            "Selection follows the official recruitment process.",
+
+        documents:
+            "Educational and experience certificates.",
+
+        process:
+            "Apply through the official Bank of India recruitment portal.",
+
+        officialUrl: "https://bankofindia.co.in/",
+
+        applyUrl: "https://bankofindia.co.in/"
+
+    },
+
+
+    {
+        id: "concor-management-trainee-2026",
+
+        title: "CONCOR Management Trainee and Assistant Officer",
+
+        organization: "Container Corporation of India",
+
+        category: "Management",
+
+        location: "India",
+
+        qualification: "Graduate / Relevant Qualification",
+
+        vacancies: 77,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-30",
+
+        salary: "As per CONCOR rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "CONCOR recruitment for Management Trainee and Assistant Officer positions.",
+
+        eligibility:
+            "Candidates must meet post-specific qualification requirements.",
+
+        selection:
+            "Selection will follow the official CONCOR process.",
+
+        documents:
+            "Educational certificates and identity proof.",
+
+        process:
+            "Check the official careers page and complete the application.",
+
+        officialUrl: "https://www.concorindia.co.in/",
+
+        applyUrl: "https://www.concorindia.co.in/"
+
+    },
+
+
+    {
+        id: "beml-non-executive-2026",
+
+        title: "BEML Non Executive",
+
+        organization: "BEML Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "ITI / Diploma / Relevant Qualification",
+
+        vacancies: 10,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-08",
+
+        salary: "As per BEML rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "BEML recruitment for Non Executive positions.",
+
+        eligibility:
+            "Post-wise eligibility conditions apply.",
+
+        selection:
+            "Selection is subject to the official recruitment notification.",
+
+        documents:
+            "Educational certificates and identity proof.",
+
+        process:
+            "Submit the application according to BEML recruitment instructions.",
+
+        officialUrl: "https://www.bemlindia.in/",
+
+        applyUrl: "https://www.bemlindia.in/"
+
+    },
+
+
+    {
+        id: "hudco-manager-dgm-2026",
+
+        title: "HUDCO Senior Manager, DGM and More",
+
+        organization: "Housing and Urban Development Corporation",
+
+        category: "Management",
+
+        location: "India",
+
+        qualification: "Graduate / Post Graduate / Relevant Qualification",
+
+        vacancies: 8,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-16",
+
+        salary: "As per HUDCO rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "HUDCO recruitment for Senior Manager, DGM and other positions.",
+
+        eligibility:
+            "Post-wise educational and experience requirements apply.",
+
+        selection:
+            "Selection will follow HUDCO recruitment rules.",
+
+        documents:
+            "Educational and professional documents.",
+
+        process:
+            "Apply through the official HUDCO recruitment process.",
+
+        officialUrl: "https://hudco.org.in/",
+
+        applyUrl: "https://hudco.org.in/"
+
+    },
+
+
+    {
+        id: "uco-bank-manager-2026",
+
+        title: "UCO Bank Manager",
+
+        organization: "UCO Bank",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Relevant Qualification",
+
+        vacancies: 20,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-18",
+
+        salary: "As per UCO Bank rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "UCO Bank recruitment for Manager positions.",
+
+        eligibility:
+            "Candidates must meet the prescribed educational and experience requirements.",
+
+        selection:
+            "Selection will be according to the official recruitment process.",
+
+        documents:
+            "Educational and experience documents.",
+
+        process:
+            "Apply through the official UCO Bank career portal.",
+
+        officialUrl: "https://www.ucobank.com/",
+
+        applyUrl: "https://www.ucobank.com/"
+
+    },
+
+
+    {
+        id: "iob-manager-assistant-manager-2026",
+
+        title: "Indian Overseas Bank Manager, Assistant Manager and More",
+
+        organization: "Indian Overseas Bank",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Relevant Qualification",
+
+        vacancies: 291,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-29",
+
+        salary: "As per IOB rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "IOB recruitment for Manager, Assistant Manager and other positions.",
+
+        eligibility:
+            "Post-wise qualification and experience requirements apply.",
+
+        selection:
+            "Selection will follow the official IOB recruitment procedure.",
+
+        documents:
+            "Educational certificates, experience certificates and identity proof.",
+
+        process:
+            "Read the official notification and complete the online application.",
+
+        officialUrl: "https://www.iob.in/",
+
+        applyUrl: "https://www.iob.in/"
+
+    },
+
+
+    {
+        id: "rrb-junior-engineer-2026",
+
+        title: "Railway Recruitment Board Junior Engineer",
+
+        organization: "Railway Recruitment Boards",
+
+        category: "Railway",
+
+        location: "India",
+
+        qualification: "Diploma / Engineering Degree",
+
+        vacancies: 4029,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-13",
+
+        salary: "As per Railway rules",
+
+        jobType: "Railway",
+
+        applicationMode: "Online",
+
+        description:
+            "Railway recruitment opportunity for Junior Engineer positions.",
+
+        eligibility:
+            "Engineering diploma/degree and other requirements apply.",
+
+        selection:
+            "Selection is conducted through the prescribed railway recruitment examination process.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Read the official railway recruitment notice and apply through the prescribed portal.",
+
+        officialUrl: "https://indianrailways.gov.in/",
+
+        applyUrl: "https://indianrailways.gov.in/"
+
+    },
+
+
+    {
+        id: "bank-of-baroda-local-bank-officer-2026",
+
+        title: "Bank of Baroda Local Bank Officer",
+
+        organization: "Bank of Baroda",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate",
+
+        vacancies: 2482,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per Bank of Baroda rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "Bank of Baroda recruitment for Local Bank Officer positions.",
+
+        eligibility:
+            "Graduate qualification and other post-specific conditions apply.",
+
+        selection:
+            "Selection follows the official Bank of Baroda recruitment process.",
+
+        documents:
+            "Educational certificates, identity proof and other required documents.",
+
+        process:
+            "Apply through the official Bank of Baroda career portal.",
+
+        officialUrl: "https://www.bankofbaroda.in/",
+
+        applyUrl: "https://www.bankofbaroda.in/"
+
+    },
+
+
+    {
+        id: "ngel-engineer-executive-2026",
+
+        title: "NGEL Engineer and Executive",
+
+        organization: "NTPC Green Energy Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Engineering / Graduate",
+
+        vacancies: 147,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per NGEL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "NGEL recruitment for Engineer and Executive positions.",
+
+        eligibility:
+            "Post-wise qualification and experience requirements apply.",
+
+        selection:
+            "Selection is subject to the official recruitment process.",
+
+        documents:
+            "Educational certificates and experience documents.",
+
+        process:
+            "Apply through the official NTPC/NGEL recruitment portal.",
+
+        officialUrl: "https://www.ngel.in/",
+
+        applyUrl: "https://www.ngel.in/"
+
+    },
+
+
+    {
+        id: "iocl-apprentice-2026",
+
+        title: "IOCL Technician, Graduate and Trade Apprentice",
+
+        organization: "Indian Oil Corporation Limited",
+
+        category: "Apprentice",
+
+        location: "India",
+
+        qualification: "ITI / Diploma / Graduate",
+
+        vacancies: 433,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-06",
+
+        salary: "As per apprenticeship rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "IOCL apprenticeship recruitment for Technician, Graduate and Trade Apprentice posts.",
+
+        eligibility:
+            "Qualification and trade requirements vary by post.",
+
+        selection:
+            "Selection will be according to the apprenticeship recruitment rules.",
+
+        documents:
+            "Educational certificates, identity proof and other documents.",
+
+        process:
+            "Follow the official IOCL apprenticeship application procedure.",
+
+        officialUrl: "https://iocl.com/",
+
+        applyUrl: "https://iocl.com/"
+
+    },
+
+
+    {
+        id: "isro-icrb-scientist-engineer-2026",
+
+        title: "ISRO ICRB Scientist and Engineer",
+
+        organization: "Indian Space Research Organisation",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Engineering Degree",
+
+        vacancies: 175,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-16",
+
+        salary: "As per ISRO rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "ISRO ICRB recruitment for Scientist and Engineer positions.",
+
+        eligibility:
+            "Engineering qualification and post-specific eligibility conditions apply.",
+
+        selection:
+            "Selection follows the ISRO recruitment examination/process.",
+
+        documents:
+            "Degree certificates, identity proof and other documents.",
+
+        process:
+            "Read the official ISRO advertisement and complete the application.",
+
+        officialUrl: "https://www.isro.gov.in/",
+
+        applyUrl: "https://www.isro.gov.in/"
+
+    },
+
+
+    {
+        id: "rfcl-engineer-manager-officer-2026",
+
+        title: "RFCL Engineer, Manager and Officer",
+
+        organization: "Ramagundam Fertilizers and Chemicals Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Engineering / Graduate / Relevant Qualification",
+
+        vacancies: 40,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-24",
+
+        salary: "As per RFCL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "RFCL recruitment for Engineer, Manager and Officer positions.",
+
+        eligibility:
+            "Post-wise educational and experience requirements apply.",
+
+        selection:
+            "Selection follows the official recruitment procedure.",
+
+        documents:
+            "Educational and experience documents.",
+
+        process:
+            "Complete the application according to the official RFCL notification.",
+
+        officialUrl: "https://www.rfcl.co.in/",
+
+        applyUrl: "https://www.rfcl.co.in/"
+
+    },
+
+
+    {
+        id: "seci-general-manager-accounts-2026",
+
+        title: "SECI General Manager, Accounts Officer and More",
+
+        organization: "Solar Energy Corporation of India",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Graduate / Post Graduate / Relevant Qualification",
+
+        vacancies: 28,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-23",
+
+        salary: "As per SECI rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "SECI recruitment for General Manager, Accounts Officer and other posts.",
+
+        eligibility:
+            "Post-specific qualification and experience requirements apply.",
+
+        selection:
+            "Selection follows the official SECI recruitment procedure.",
+
+        documents:
+            "Educational certificates and experience documents.",
+
+        process:
+            "Apply through the official SECI careers portal.",
+
+        officialUrl: "https://www.seci.co.in/",
+
+        applyUrl: "https://www.seci.co.in/"
+
+    },
+
+
+    {
+        id: "rites-engineer-2026",
+
+        title: "RITES Engineer",
+
+        organization: "RITES Limited",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Engineering Degree / Diploma",
+
+        vacancies: 8,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-14",
+
+        salary: "As per RITES rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "RITES recruitment for Engineer positions.",
+
+        eligibility:
+            "Candidates should meet the post-wise educational and experience requirements.",
+
+        selection:
+            "Selection is according to the official RITES recruitment process.",
+
+        documents:
+            "Educational and experience documents.",
+
+        process:
+            "Apply through the official RITES recruitment website.",
+
+        officialUrl: "https://www.rites.com/",
+
+        applyUrl: "https://www.rites.com/"
+
+    },
+
+
+    {
+        id: "powergrid-apprentice-2026",
+
+        title: "POWERGRID Apprentices",
+
+        organization: "Power Grid Corporation of India Limited",
+
+        category: "Apprentice",
+
+        location: "India",
+
+        qualification: "ITI / Diploma / Graduate",
+
+        vacancies: 270,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-10",
+
+        salary: "As per apprenticeship rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "POWERGRID apprenticeship opportunities for eligible candidates.",
+
+        eligibility:
+            "Qualification varies by apprenticeship trade.",
+
+        selection:
+            "Selection will be conducted as per apprenticeship rules.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Follow the official POWERGRID apprenticeship instructions.",
+
+        officialUrl: "https://www.powergrid.in/",
+
+        applyUrl: "https://www.powergrid.in/"
+
+    },
+
+
+    {
+        id: "rcfl-management-trainee-2026",
+
+        title: "RCFL Management Trainee",
+
+        organization: "Rashtriya Chemicals and Fertilizers Limited",
+
+        category: "Management",
+
+        location: "India",
+
+        qualification: "Graduate / Engineering / Relevant Qualification",
+
+        vacancies: 94,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-10",
+
+        salary: "As per RCFL rules",
+
+        jobType: "Public Sector",
+
+        applicationMode: "Online",
+
+        description:
+            "RCFL recruitment for Management Trainee positions.",
+
+        eligibility:
+            "Post-wise qualification and eligibility requirements apply.",
+
+        selection:
+            "Selection follows the official RCFL recruitment procedure.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Apply through the official RCFL recruitment portal.",
+
+        officialUrl: "https://www.rcfltd.com/",
+
+        applyUrl: "https://www.rcfltd.com/"
+
+    },
+
+
+    {
+        id: "cpcb-deo-field-assistant-2026",
+
+        title: "CPCB DEO, Field Assistant and More",
+
+        organization: "Central Pollution Control Board",
+
+        category: "Other Government Jobs",
+
+        location: "India",
+
+        qualification: "12th / Graduate / Relevant Qualification",
+
+        vacancies: 51,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per CPCB rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "CPCB recruitment for Data Entry Operator, Field Assistant and other positions.",
+
+        eligibility:
+            "Post-wise qualification requirements apply.",
+
+        selection:
+            "Selection is subject to the official recruitment procedure.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Follow the official CPCB recruitment instructions.",
+
+        officialUrl: "https://cpcb.nic.in/",
+
+        applyUrl: "https://cpcb.nic.in/"
+
+    },
+
+
+    {
+        id: "upsc-apfc-2026",
+
+        title: "UPSC Assistant Provident Fund Commissioner",
+
+        organization: "Union Public Service Commission",
+
+        category: "UPSC",
+
+        location: "India",
+
+        qualification: "Graduate / Relevant Qualification",
+
+        vacancies: 80,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-11",
+
+        salary: "As per Central Government rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "UPSC recruitment for Assistant Provident Fund Commissioner.",
+
+        eligibility:
+            "Candidates must satisfy the UPSC prescribed eligibility criteria.",
+
+        selection:
+            "Selection follows the UPSC recruitment process.",
+
+        documents:
+            "Educational certificates and required supporting documents.",
+
+        process:
+            "Apply through the official UPSC application portal.",
+
+        officialUrl: "https://upsc.gov.in/",
+
+        applyUrl: "https://upsconline.nic.in/"
+
+    },
+
+
+    {
+        id: "nainital-bank-civil-manager-2026",
+
+        title: "Nainital Bank Civil Engineer, Manager and More",
+
+        organization: "Nainital Bank",
+
+        category: "Banking",
+
+        location: "India",
+
+        qualification: "Graduate / Engineering / Relevant Qualification",
+
+        vacancies: 41,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per bank rules",
+
+        jobType: "Banking",
+
+        applicationMode: "Online",
+
+        description:
+            "Nainital Bank recruitment for Civil Engineer, Manager and other positions.",
+
+        eligibility:
+            "Post-wise eligibility and experience requirements apply.",
+
+        selection:
+            "Selection will follow the official bank recruitment process.",
+
+        documents:
+            "Educational and experience certificates.",
+
+        process:
+            "Apply through the official Nainital Bank recruitment process.",
+
+        officialUrl: "https://www.nainitalbank.co.in/",
+
+        applyUrl: "https://www.nainitalbank.co.in/"
+
+    },
+
+
+    {
+        id: "aai-nr-apprentice-2026",
+
+        title: "AAI Northern Region Apprentice",
+
+        organization: "Airports Authority of India",
+
+        category: "Apprentice",
+
+        location: "India",
+
+        qualification: "ITI / Diploma / Graduate",
+
+        vacancies: 205,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-16",
+
+        salary: "As per apprenticeship rules",
+
+        jobType: "Government Organization",
+
+        applicationMode: "Online",
+
+        description:
+            "AAI Northern Region apprenticeship opportunities.",
+
+        eligibility:
+            "Qualification varies by apprenticeship category.",
+
+        selection:
+            "Selection follows apprenticeship rules.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Complete the official AAI apprenticeship application process.",
+
+        officialUrl: "https://www.aai.aero/",
+
+        applyUrl: "https://www.aai.aero/"
+
+    },
+
+
+    {
+        id: "itbp-medical-officer-2026",
+
+        title: "ITBP Medical Officer",
+
+        organization: "Indo-Tibetan Border Police Force",
+
+        category: "Defence",
+
+        location: "India",
+
+        qualification: "MBBS / Medical Qualification",
+
+        vacancies: 282,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-08",
+
+        salary: "As per Government rules",
+
+        jobType: "Defence",
+
+        applicationMode: "Online",
+
+        description:
+            "ITBP recruitment for Medical Officer positions.",
+
+        eligibility:
+            "Medical qualification and other conditions apply as specified in the official notification.",
+
+        selection:
+            "Selection will follow the ITBP recruitment process.",
+
+        documents:
+            "Medical qualification certificates and identity documents.",
+
+        process:
+            "Read the official ITBP notification and complete the prescribed application process.",
+
+        officialUrl: "https://recruitment.itbpolice.nic.in/",
+
+        applyUrl: "https://recruitment.itbpolice.nic.in/"
+
+    },
+
+
+    {
+        id: "aai-manager-junior-executive-2026",
+
+        title: "AAI Manager and Junior Executive",
+
+        organization: "Airports Authority of India",
+
+        category: "Engineering",
+
+        location: "India",
+
+        qualification: "Graduate / Engineering / Relevant Qualification",
+
+        vacancies: 389,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per AAI rules",
+
+        jobType: "Government Organization",
+
+        applicationMode: "Online",
+
+        description:
+            "AAI recruitment for Manager and Junior Executive positions.",
+
+        eligibility:
+            "Post-wise qualification and experience conditions apply.",
+
+        selection:
+            "Selection follows the official AAI recruitment process.",
+
+        documents:
+            "Educational and experience certificates.",
+
+        process:
+            "Apply through the official AAI careers portal.",
+
+        officialUrl: "https://www.aai.aero/",
+
+        applyUrl: "https://www.aai.aero/"
+
+    },
+
+
+    {
+        id: "stpi-junior-hindi-translator-2026",
+
+        title: "STPI Junior Hindi Translator",
+
+        organization: "Software Technology Parks of India",
+
+        category: "Other Government Jobs",
+
+        location: "India",
+
+        qualification: "Graduate / Post Graduate",
+
+        vacancies: 9,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per STPI rules",
+
+        jobType: "Government Organization",
+
+        applicationMode: "Online",
+
+        description:
+            "STPI recruitment for Junior Hindi Translator positions.",
+
+        eligibility:
+            "Educational and language qualification requirements apply.",
+
+        selection:
+            "Selection will follow the official STPI process.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Check the official STPI recruitment notice and apply as instructed.",
+
+        officialUrl: "https://www.stpi.in/",
+
+        applyUrl: "https://www.stpi.in/"
+
+    },
+
+
+    {
+        id: "nii-jrf-2026",
+
+        title: "NII Junior Research Fellow",
+
+        organization: "National Institute of Immunology",
+
+        category: "Research",
+
+        location: "India",
+
+        qualification: "Post Graduate / Relevant Qualification",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-11",
+
+        salary: "As per research fellowship rules",
+
+        jobType: "Research",
+
+        applicationMode: "Online",
+
+        description:
+            "Research recruitment opportunity for Junior Research Fellow.",
+
+        eligibility:
+            "Candidates must meet the academic requirements specified in the official notification.",
+
+        selection:
+            "Selection is subject to the institute's recruitment process.",
+
+        documents:
+            "Academic certificates, CV and other required documents.",
+
+        process:
+            "Follow the official institute recruitment instructions.",
+
+        officialUrl: "https://www.nii.res.in/",
+
+        applyUrl: "https://www.nii.res.in/"
+
+    },
+
+
+    {
+        id: "mhrb-assam-medical-officer-2026",
+
+        title: "Assam Medical and Health Officer",
+
+        organization: "Medical and Health Recruitment Board Assam",
+
+        category: "Medical",
+
+        location: "Assam",
+
+        qualification: "MBBS / Medical Qualification",
+
+        vacancies: 560,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-20",
+
+        salary: "As per Assam Government rules",
+
+        jobType: "State Government",
+
+        applicationMode: "Online",
+
+        description:
+            "Medical and Health Officer recruitment opportunity in Assam.",
+
+        eligibility:
+            "Medical qualification and registration requirements apply.",
+
+        selection:
+            "Selection follows the official recruitment process.",
+
+        documents:
+            "Medical degree, registration and identity documents.",
+
+        process:
+            "Apply through the official Assam recruitment portal.",
+
+        officialUrl: "https://mhrbassam.gov.in/",
+
+        applyUrl: "https://mhrbassam.gov.in/"
+
+    },
+
+
+    {
+        id: "aiims-guwahati-senior-resident-2026",
+
+        title: "AIIMS Guwahati Senior Resident and Senior Demonstrator",
+
+        organization: "AIIMS Guwahati",
+
+        category: "Medical",
+
+        location: "Assam",
+
+        qualification: "Medical / Post Graduate",
+
+        vacancies: 103,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-18",
+
+        salary: "As per AIIMS rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "AIIMS Guwahati recruitment for Senior Resident and Senior Demonstrator positions.",
+
+        eligibility:
+            "Relevant medical qualification and other conditions apply.",
+
+        selection:
+            "Selection follows AIIMS recruitment procedures.",
+
+        documents:
+            "Degree, registration, experience and identity documents.",
+
+        process:
+            "Check the official AIIMS Guwahati notification and apply as instructed.",
+
+        officialUrl: "https://aiimsguwahati.ac.in/",
+
+        applyUrl: "https://aiimsguwahati.ac.in/"
+
+    },
+
+
+    {
+        id: "iit-guwahati-project-manager-2026",
+
+        title: "IIT Guwahati Project Manager, Consultant and More",
+
+        organization: "Indian Institute of Technology Guwahati",
+
+        category: "Research",
+
+        location: "Assam",
+
+        qualification: "Graduate / Post Graduate / Relevant Qualification",
+
+        vacancies: 5,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-12",
+
+        salary: "As per project rules",
+
+        jobType: "Research / Education",
+
+        applicationMode: "Online",
+
+        description:
+            "IIT Guwahati recruitment for Project Manager, Consultant and related positions.",
+
+        eligibility:
+            "Project-specific qualification and experience requirements apply.",
+
+        selection:
+            "Selection follows the institute's recruitment procedure.",
+
+        documents:
+            "Academic certificates, CV and required documents.",
+
+        process:
+            "Apply through the official IIT Guwahati recruitment portal.",
+
+        officialUrl: "https://www.iitg.ac.in/",
+
+        applyUrl: "https://www.iitg.ac.in/"
+
+    },
+
+
+    {
+        id: "tiss-assistant-professor-2026",
+
+        title: "TISS Assistant Professor",
+
+        organization: "Tata Institute of Social Sciences",
+
+        category: "Teaching",
+
+        location: "India",
+
+        qualification: "Post Graduate / PhD / Relevant Qualification",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-16",
+
+        salary: "As per institute rules",
+
+        jobType: "Education",
+
+        applicationMode: "Online",
+
+        description:
+            "Assistant Professor recruitment opportunity at TISS.",
+
+        eligibility:
+            "Academic and experience requirements apply as specified in the notification.",
+
+        selection:
+            "Selection follows the institute recruitment process.",
+
+        documents:
+            "Academic certificates, CV and supporting documents.",
+
+        process:
+            "Review the official TISS recruitment notification and apply as directed.",
+
+        officialUrl: "https://www.tiss.ac.in/",
+
+        applyUrl: "https://www.tiss.ac.in/"
+
+    },
+
+
+    {
+        id: "iitr-project-research-scientist-2026",
+
+        title: "AIIMS Delhi Project Research Scientist",
+
+        organization: "AIIMS New Delhi",
+
+        category: "Research",
+
+        location: "Delhi",
+
+        qualification: "Relevant Medical / Life Science Qualification",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-15",
+
+        salary: "As per project rules",
+
+        jobType: "Central Government",
+
+        applicationMode: "Online",
+
+        description:
+            "Project Research Scientist recruitment opportunity at AIIMS Delhi.",
+
+        eligibility:
+            "Project-specific academic eligibility applies.",
+
+        selection:
+            "Selection is subject to the project recruitment procedure.",
+
+        documents:
+            "Academic certificates, CV and identity documents.",
+
+        process:
+            "Follow the official AIIMS Delhi project recruitment instructions.",
+
+        officialUrl: "https://www.aiims.edu/",
+
+        applyUrl: "https://www.aiims.edu/"
+
+    },
+
+
+    {
+        id: "iit-delhi-research-associate-2026",
+
+        title: "IIT Delhi Research Associate",
+
+        organization: "Indian Institute of Technology Delhi",
+
+        category: "Research",
+
+        location: "Delhi",
+
+        qualification: "Post Graduate / PhD / Relevant Qualification",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-16",
+
+        salary: "As per project rules",
+
+        jobType: "Research / Education",
+
+        applicationMode: "Online",
+
+        description:
+            "Research Associate opportunity at IIT Delhi.",
+
+        eligibility:
+            "Project-specific qualification and research experience may apply.",
+
+        selection:
+            "Selection follows IIT Delhi project recruitment procedures.",
+
+        documents:
+            "Academic certificates, CV and other supporting documents.",
+
+        process:
+            "Apply through the official IIT Delhi recruitment process.",
+
+        officialUrl: "https://home.iitd.ac.in/",
+
+        applyUrl: "https://home.iitd.ac.in/"
+
+    },
+
+
+    {
+        id: "nabad-research-assistant-2026",
+
+        title: "NABCONS Project Assistant",
+
+        organization: "NABCONS",
+
+        category: "Other Government Jobs",
+
+        location: "India",
+
+        qualification: "Graduate",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-06",
+
+        salary: "As per official notification",
+
+        jobType: "Government-associated Organization",
+
+        applicationMode: "Online",
+
+        description:
+            "Project Assistant recruitment opportunity.",
+
+        eligibility:
+            "Candidates must satisfy the official qualification and experience conditions.",
+
+        selection:
+            "Selection is subject to the official recruitment procedure.",
+
+        documents:
+            "Educational certificates and identity documents.",
+
+        process:
+            "Follow the official NABCONS recruitment instructions.",
+
+        officialUrl: "https://www.nabcons.com/",
+
+        applyUrl: "https://www.nabcons.com/"
+
+    },
+
+
+    {
+        id: "nitttr-kolkata-software-developer-2026",
+
+        title: "NITTTR Kolkata Software Developer and Technician",
+
+        organization: "National Institute of Technical Teachers Training and Research Kolkata",
+
+        category: "IT",
+
+        location: "Kolkata, West Bengal",
+
+        qualification: "Engineering / Diploma / Relevant Qualification",
+
+        vacancies: 2,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-07",
+
+        salary: "As per official notification",
+
+        jobType: "Education / Government",
+
+        applicationMode: "Online / Offline",
+
+        description:
+            "Recruitment for Software Developer, Technician and related positions.",
+
+        eligibility:
+            "Post-wise technical qualification requirements apply.",
+
+        selection:
+            "Selection follows the institute's recruitment process.",
+
+        documents:
+            "Educational certificates, CV and identity proof.",
+
+        process:
+            "Check the official institute recruitment notification and apply as instructed.",
+
+        officialUrl: "https://www.nitttrkol.ac.in/",
+
+        applyUrl: "https://www.nitttrkol.ac.in/"
+
+    },
+
+
+    {
+        id: "iitr-kharagpur-librarian-2026",
+
+        title: "IIT Kharagpur Librarian",
+
+        organization: "Indian Institute of Technology Kharagpur",
+
+        category: "Teaching",
+
+        location: "Kharagpur, West Bengal",
+
+        qualification: "Relevant Degree / Library Science Qualification",
+
+        vacancies: 1,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-17",
+
+        salary: "As per institute rules",
+
+        jobType: "Education",
+
+        applicationMode: "Online",
+
+        description:
+            "Librarian recruitment opportunity at IIT Kharagpur.",
+
+        eligibility:
+            "Candidates must meet the academic and experience requirements.",
+
+        selection:
+            "Selection follows the IIT Kharagpur recruitment process.",
+
+        documents:
+            "Academic certificates, experience documents and identity proof.",
+
+        process:
+            "Apply through the official IIT Kharagpur recruitment portal.",
+
+        officialUrl: "https://www.iitkgp.ac.in/",
+
+        applyUrl: "https://www.iitkgp.ac.in/"
+
+    },
+
+
+    {
+        id: "iit-kharagpur-software-engineer-2026",
+
+        title: "IIT Kharagpur Software, System and Network Engineer",
+
+        organization: "Indian Institute of Technology Kharagpur",
+
+        category: "IT",
+
+        location: "Kharagpur, West Bengal",
+
+        qualification: "B.Tech / B.E. / MCA / Relevant Qualification",
+
+        vacancies: 7,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-17",
+
+        salary: "As per project/institute rules",
+
+        jobType: "Education / Research",
+
+        applicationMode: "Online",
+
+        description:
+            "Recruitment for Software, System and Network Engineer positions.",
+
+        eligibility:
+            "Technical qualification and experience requirements apply.",
+
+        selection:
+            "Selection is subject to the institute recruitment process.",
+
+        documents:
+            "Degree certificates, CV and other required documents.",
+
+        process:
+            "Apply through the official IIT Kharagpur recruitment system.",
+
+        officialUrl: "https://www.iitkgp.ac.in/",
+
+        applyUrl: "https://www.iitkgp.ac.in/"
+
+    },
+
+
+    {
+        id: "csir-cmeri-fitter-electrician-2026",
+
+        title: "CSIR CMERI Fitter, Electrician and More",
+
+        organization: "CSIR Central Mechanical Engineering Research Institute",
+
+        category: "Technical",
+
+        location: "Durgapur, West Bengal",
+
+        qualification: "ITI / Relevant Technical Qualification",
+
+        vacancies: 27,
+
+        posted: "2026-09-04",
+
+        deadline: "2026-09-13",
+
+        salary: "As per official notification",
+
+        jobType: "Research / Government",
+
+        applicationMode: "Online",
+
+        description:
+            "Technical recruitment opportunity for Fitter, Electrician and other trades.",
+
+        eligibility:
+            "Technical trade qualification and other requirements apply.",
+
+        selection:
+            "Selection will follow the official CSIR CMERI recruitment procedure.",
+
+        documents:
+            "ITI/trade certificates and identity documents.",
+
+        process:
+            "Check the official CSIR CMERI recruitment notification and apply.",
+
+        officialUrl: "https://www.cmeri.res.in/",
+
+        applyUrl: "https://www.cmeri.res.in/"
+
+    }
+
+];

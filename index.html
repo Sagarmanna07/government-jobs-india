@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GovtJobsIndia - Latest Government Jobs in India</title>
+
+    <meta name="description"
+          content="Find the latest government jobs, banking jobs, railway jobs, defence jobs, teaching jobs and other government vacancies in India.">
+
+    <meta name="keywords"
+          content="government jobs India, govt jobs, latest government jobs, railway jobs, bank jobs, SSC jobs, UPSC jobs">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">G</span>
+            <span>GovtJobsIndia</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="jobs.html">Government Jobs</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <span class="hero-badge">
+                Latest Government Job Updates
+            </span>
+
+            <h1>
+                Find the Latest Government Jobs in India
+            </h1>
+
+            <p>
+                Search government jobs, railway jobs, banking jobs,
+                defence jobs, teaching jobs and more.
+            </p>
+
+            <form class="hero-search" id="homeSearch">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="text"
+                        id="homeSearchInput"
+                        placeholder="Search job title, organization or qualification..."
+                    >
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Search Jobs
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">Explore Opportunities</span>
+                    <h2>Government Job Categories</h2>
+                </div>
+
+                <a href="jobs.html" class="view-all">
+                    View All Jobs →
+                </a>
+
+            </div>
+
+            <div class="category-grid" id="categoryGrid"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRENDING JOBS -->
+
+    <section class="section section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">Popular Opportunities</span>
+                    <h2>Trending Government Jobs</h2>
+                </div>
+
+                <a href="jobs.html" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+            <div class="job-grid" id="trendingJobs"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEADLINE -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">Apply Before It Is Too Late</span>
+                    <h2>Deadline Near</h2>
+                </div>
+
+                <a href="jobs.html?sort=deadline" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+            <div class="job-grid" id="deadlineJobs"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEW JOBS -->
+
+    <section class="section section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">Recently Added</span>
+                    <h2>New Government Jobs</h2>
+                </div>
+
+                <a href="jobs.html?sort=newest" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+            <div class="job-grid" id="newJobs"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="footer-logo">
+                GovtJobsIndia
+            </a>
+
+            <p>
+                Your simple destination for finding government
+                job opportunities across India.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Government Jobs</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Job Categories</h3>
+
+            <a href="jobs.html?category=Banking">Banking</a>
+            <a href="jobs.html?category=Railway">Railway</a>
+            <a href="jobs.html?category=Defence">Defence</a>
+            <a href="jobs.html?category=Teaching">Teaching</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Important</h3>
+
+            <p class="footer-note">
+                Always verify eligibility, dates and application
+                instructions from the official recruitment notification
+                before applying.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © <span id="currentYear"></span> GovtJobsIndia.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
