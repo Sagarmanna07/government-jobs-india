@@ -275,4 +275,269 @@ function setupJobsPage() {
             filtered = filtered.filter(job => job.qualification === qualificationFilter.value);
         }
         if (salaryFilter.value) {
-            const minimum = Number
+            const minimum = Number(salaryFilter.value);
+            filtered = filtered.filter(job => {
+                const salaryText = String(job.salary || "");
+                const numbers = salaryText.match(/\d[\d,]*/g);
+                if (!numbers) return true;
+                const highest = Math.max(...numbers.map(number => Number(number.replace(/,/g, ""))));
+                return highest >= minimum;
+            });
+        }
+        const sort = sortFilter.value;
+        if (sort === "deadline") {
+            filtered.sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
+        } else if (sort === "vacancies") {
+            filtered.sort((a, b) => (b.vacancies || 0) - (a.vacancies || 0));
+        } else if (sort === "title") {
+            filtered.sort((a, b) => a.title.localeCompare(b.title));
+        } else {
+            filtered.sort((a, b) => new Date(b.posted) - new Date(a.posted));
+        }
+        return filtered;
+    }
+
+    function renderJobs() {
+        const filtered = getFilteredJobs();
+        const total = filtered.length;
+        const start = (currentPage - 1) * JOBS_PER_PAGE;
+        const end = start + JOBS_PER_PAGE;
+        const pageJobs = filtered.slice(start, end);
+
+        const resultsCount = document.getElementById("resultsCount");
+        if (resultsCount) {
+            resultsCount.textContent = `${total} job${total !== 1 ? "s" : ""} found`;
+        }
+
+        if (!pageJobs.length) {
+            jobsList.innerHTML = `
+                <div class="empty-state">
+                    <h3>No jobs found</h3>
+                    <p>Try changing your search or filters.</p>
+                </div>
+            `;
+        } else {
+            jobsList.innerHTML = pageJobs.map(createJobCard).join("");
+        }
+
+        renderPagination(total);
+        updateSaveButtons();
+    }
+
+    function renderPagination(total) {
+        const pagination = document.getElementById("pagination");
+        if (!pagination) return;
+        const totalPages = Math.ceil(total / JOBS_PER_PAGE);
+        if (totalPages <= 1) {
+            pagination.innerHTML = "";
+            return;
+        }
+        let html = "";
+        if (currentPage > 1) {
+            html += `<button class="page-btn" data-page="${currentPage - 1}">←</button>`;
+        }
+        for (let page = 1; page <= totalPages; page++) {
+            if (page === 1 || page === totalPages || Math.abs(page - currentPage) <= 2) {
+                html += `<button class="page-btn ${page === currentPage ? "active" : ""}" data-page="${page}">${page}</button>`;
+            }
+        }
+        if (currentPage < totalPages) {
+            html += `<button class="page-btn" data-page="${currentPage + 1}">→</button>`;
+        }
+        pagination.innerHTML = html;
+        pagination.querySelectorAll("[data-page]").forEach(button => {
+            button.addEventListener("click", () => {
+                currentPage = Number(button.dataset.page);
+                renderJobs();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    }
+
+    renderJobs();
+}
+
+// JOB DETAIL PAGE
+function setupJobDetailPage() {
+    const container = document.getElementById("jobDetail");
+    if (!container) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const job = getJobById(id);
+
+    if (!job) {
+        container.innerHTML = `
+            <section class="section">
+                <div class="empty-state">
+                    <h3>Job Not Found</h3>
+                    <p>The requested job could not be found.</p>
+                    <br>
+                    <a href="jobs.html" class="btn btn-primary">Browse Government Jobs</a>
+                </div>
+            </section>
+        `;
+        return;
+    }
+
+    document.title = `${job.title} - GovtJobsIndia`;
+    const vacancies = job.vacancies ? job.vacancies.toLocaleString("en-IN") : "See Notification";
+
+    container.innerHTML = `
+        <section class="detail-wrapper">
+            <div class="detail-header">
+                <span class="badge">${escapeHTML(job.category)}</span>
+                <h1>${escapeHTML(job.title)}</h1>
+                <p class="detail-org">${escapeHTML(job.organization)}</p>
+                <div class="detail-badges">
+                    <span class="badge">📍 ${escapeHTML(job.location)}</span>
+                    <span class="badge">🎓 ${escapeHTML(job.qualification)}</span>
+                    <span class="badge">📋 ${vacancies} Vacancies</span>
+                </div>
+                <div class="countdown-box" id="countdown">Checking deadline...</div>
+            </div>
+            <div class="detail-body">
+                <div class="detail-grid">
+                    <div class="detail-item"><span>Organization</span><strong>${escapeHTML(job.organization)}</strong></div>
+                    <div class="detail-item"><span>Category</span><strong>${escapeHTML(job.category)}</strong></div>
+                    <div class="detail-item"><span>Vacancies</span><strong>${vacancies}</strong></div>
+                    <div class="detail-item"><span>Qualification</span><strong>${escapeHTML(job.qualification)}</strong></div>
+                    <div class="detail-item"><span>Location</span><strong>${escapeHTML(job.location)}</strong></div>
+                    <div class="detail-item"><span>Salary</span><strong>${escapeHTML(job.salary)}</strong></div>
+                    <div class="detail-item"><span>Posted Date</span><strong>${formatDate(job.posted)}</strong></div>
+                    <div class="detail-item"><span>Last Date</span><strong>${formatDate(job.deadline)}</strong></div>
+                </div>
+                <div class="detail-section">
+                    <h2>Job Description</h2>
+                    <p>${escapeHTML(job.description)}</p>
+                </div>
+                <div class="detail-section">
+                    <h2>Eligibility</h2>
+                    <p>${escapeHTML(job.eligibility)}</p>
+                </div>
+                <div class="detail-section">
+                    <h2>Selection Process</h2>
+                    <p>${escapeHTML(job.selection)}</p>
+                </div>
+                <div class="detail-section">
+                    <h2>Application Process</h2>
+                    <p>${escapeHTML(job.process)}</p>
+                </div>
+                <div class="detail-section">
+                    <h2>Documents Required</h2>
+                    <p>${escapeHTML(job.documents)}</p>
+                </div>
+                <div class="detail-section">
+                    <h2>Source Details</h2>
+                    <div class="source-details">
+                        <p>This section contains the job information available on GovtJobsIndia.</p>
+                        <ul>
+                            <li>Organization: ${escapeHTML(job.organization)}</li>
+                            <li>Job Category: ${escapeHTML(job.category)}</li>
+                            <li>Location: ${escapeHTML(job.location)}</li>
+                            <li>Qualification: ${escapeHTML(job.qualification)}</li>
+                            <li>Vacancies: ${vacancies}</li>
+                            <li>Application Mode: ${escapeHTML(job.applicationMode)}</li>
+                            <li>Posted Date: ${formatDate(job.posted)}</li>
+                            <li>Last Date: ${formatDate(job.deadline)}</li>
+                        </ul>
+                        <p>Candidates should verify all details against the official recruitment notification before applying.</p>
+                    </div>
+                </div>
+                <div class="detail-section">
+                    <h2>Important Links</h2>
+                    <div class="important-links">
+                        <a href="${escapeHTML(job.applyUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Apply Now</a>
+                        <a href="${escapeHTML(job.officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Official Website</a>
+                        <button class="btn btn-outline" id="shareWhatsApp">WhatsApp Share</button>
+                        <button class="btn btn-outline" id="shareFacebook">Facebook Share</button>
+                        <button class="btn btn-outline" data-save-id="${escapeHTML(job.id)}">${isSaved(job.id) ? "★" : "☆"} Save Job</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `;
+
+    setupCountdown(job.deadline);
+
+    const whatsapp = document.getElementById("shareWhatsApp");
+    if (whatsapp) {
+        whatsapp.addEventListener("click", () => {
+            const text = `${job.title} - GovtJobsIndia`;
+            const url = window.location.href;
+            window.open("https://wa.me/?text=" + encodeURIComponent(text + "\n" + url), "_blank");
+        });
+    }
+
+    const facebook = document.getElementById("shareFacebook");
+    if (facebook) {
+        facebook.addEventListener("click", () => {
+            window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), "_blank");
+        });
+    }
+
+    updateSaveButtons();
+}
+
+// COUNTDOWN
+function setupCountdown(deadline) {
+    const element = document.getElementById("countdown");
+    if (!element) return;
+
+    function update() {
+        const deadlineDate = new Date(deadline + "T23:59:59");
+        const now = new Date();
+        const difference = deadlineDate - now;
+        if (difference <= 0) {
+            element.textContent = "Application deadline has passed.";
+            return;
+        }
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / (1000 * 60)) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
+        element.textContent = `⏳ ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds remaining`;
+    }
+
+    update();
+    setInterval(update, 1000);
+}
+
+// CONTACT
+function setupContactPage() {
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+    const status = document.getElementById("contactStatus");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const mailBody = `Name: ${name}\n\nEmail: ${email}\n\nMessage:\n${message}`;
+        const mailto = "mailto:support@govtjobsindia.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(mailBody);
+        window.location.href = mailto;
+        if (status) {
+            status.textContent = "Opening your email application...";
+        }
+    });
+}
+
+// YEAR
+function setupYear() {
+    document.querySelectorAll("#currentYear").forEach(element => {
+        element.textContent = new Date().getFullYear();
+    });
+}
+
+// INITIALIZE
+document.addEventListener("DOMContentLoaded", () => {
+    setupMobileMenu();
+    setupSaveButtons();
+    setupHomePage();
+    setupJobsPage();
+    setupJobDetailPage();
+    setupContactPage();
+    setupYear();
+});
