@@ -1,365 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - GovtJobsIndia</title>
-
-    <meta name="description"
-          content="Contact GovtJobsIndia for questions, corrections or feedback.">
-
-    <link rel="stylesheet"
-          href="assets/css/style.css">
-
+    <meta name="description" content="Contact GovtJobsIndia for questions, corrections or feedback.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
 <body>
 
-
 <header class="site-header">
-
     <div class="container nav-container">
-
-        <a href="index.html"
-           class="logo">
-
-            <span class="logo-icon">
-                G
-            </span>
-
-            <span>
-                GovtJobsIndia
-            </span>
-
+        <a href="index.html" class="logo">
+            <span class="logo-icon">G</span>
+            <span>GovtJobsIndia</span>
         </a>
-
-
-        <button
-            class="menu-toggle"
-            id="menuToggle">
-            ☰
-        </button>
-
-
-        <nav
-            class="main-nav"
-            id="mainNav">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="jobs.html">
-                Government Jobs
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="contact.html"
-               class="active">
-                Contact
-            </a>
-
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Government Jobs</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
-
     </div>
-
 </header>
 
-
 <main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h1>Contact Us</h1>
+            <p>Have a question, correction or suggestion? Send us a message.</p>
+        </div>
+    </section>
 
-
-<section class="page-hero">
-
-    <div class="container">
-
-        <span class="section-label">
-            Get In Touch
-        </span>
-
-        <h1>
-            Contact Us
-        </h1>
-
-        <p>
-            Have a question, correction or suggestion?
-            Send us a message.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section class="section">
-
-    <div class="container contact-grid">
-
-
-        <div class="contact-info">
-
-            <h2>
-                Contact Information
-            </h2>
-
-            <p>
-                If you notice incorrect information,
-                a broken link or want to suggest an
-                improvement, please contact us.
-            </p>
-
-
-            <div class="contact-item">
-
-                <div class="contact-icon">
-                    ✉
+    <section class="section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>If you notice incorrect information, a broken link or want to suggest an improvement, please contact us.</p>
+                <div class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>support@govtjobsindia.com</p>
+                    </div>
                 </div>
-
-                <div>
-
-                    <h3>
-                        Email
-                    </h3>
-
-                    <p>
-                        support@govtjobsindia.com
-                    </p>
-
+                <div class="contact-item">
+                    <div class="contact-icon">⏱</div>
+                    <div>
+                        <h3>Response Time</h3>
+                        <p>We aim to respond as soon as possible.</p>
+                    </div>
                 </div>
-
             </div>
 
-
-            <div class="contact-item">
-
-                <div class="contact-icon">
-                    ⏱
-                </div>
-
-                <div>
-
-                    <h3>
-                        Response Time
-                    </h3>
-
-                    <p>
-                        We aim to respond as soon as possible.
-                    </p>
-
-                </div>
-
+            <div class="contact-form-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Write your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                    <p id="contactStatus" class="form-status"></p>
+                </form>
             </div>
-
         </div>
-
-
-        <div class="contact-form-card">
-
-            <form id="contactForm">
-
-                <div class="form-group">
-
-                    <label for="name">
-                        Your Name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        placeholder="Enter your name">
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        placeholder="Enter your email">
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="subject">
-                        Subject
-                    </label>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        required
-                        placeholder="Enter subject">
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                        placeholder="Write your message..."></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="btn btn-primary full-width">
-
-                    Send Message
-
-                </button>
-
-
-                <p
-                    id="contactStatus"
-                    class="form-status">
-                </p>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-
+    </section>
 </main>
 
-
 <footer class="site-footer">
-
     <div class="container footer-grid">
-
         <div>
-
-            <a href="index.html"
-               class="footer-logo">
-                GovtJobsIndia
-            </a>
-
-            <p>
-                Your simple destination for
-                government job information.
-            </p>
-
+            <a href="index.html" class="footer-logo">GovtJobsIndia</a>
+            <p>Your simple destination for government job information.</p>
         </div>
-
-
         <div>
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="jobs.html">
-                Government Jobs
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Government Jobs</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
-
-
         <div>
-
-            <h3>
-                Categories
-            </h3>
-
-            <a href="jobs.html?category=Banking">
-                Banking
-            </a>
-
-            <a href="jobs.html?category=Railway">
-                Railway
-            </a>
-
-            <a href="jobs.html?category=Defence">
-                Defence
-            </a>
-
-            <a href="jobs.html?category=Teaching">
-                Teaching
-            </a>
-
+            <h3>Categories</h3>
+            <a href="jobs.html?category=Banking">Banking</a>
+            <a href="jobs.html?category=Railway">Railway</a>
+            <a href="jobs.html?category=Defence">Defence</a>
+            <a href="jobs.html?category=Teaching">Teaching</a>
         </div>
-
-
         <div>
-
-            <h3>
-                Important
-            </h3>
-
-            <p class="footer-note">
-                Please verify recruitment information
-                before applying.
-            </p>
-
+            <h3>Important</h3>
+            <p class="footer-note">Please verify recruitment information before applying.</p>
         </div>
-
     </div>
-
-
     <div class="footer-bottom">
-
         <div class="container">
-
-            <p>
-                © <span id="currentYear"></span>
-                GovtJobsIndia.
-                All rights reserved.
-            </p>
-
+            <p>© <span id="currentYear"></span> GovtJobsIndia. All rights reserved.</p>
         </div>
-
     </div>
-
 </footer>
 
-
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
-
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
