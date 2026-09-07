@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://government-jobs-india.netlify.app/sitemap.xml
+Sitemap: https://govemmentjobsindia.netlify.app/sitemap.xml
