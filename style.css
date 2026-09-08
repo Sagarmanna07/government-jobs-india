@@ -98,7 +98,9 @@ button {
 }
 
 
-/* HEADER */
+/* =========================================================
+   HEADER & LOGO
+   ========================================================= */
 
 .site-header {
 
@@ -127,6 +129,7 @@ button {
 }
 
 
+/* ----- LOGO STYLES ----- */
 .logo {
 
     display: flex;
@@ -140,6 +143,19 @@ button {
     font-size: 21px;
 
     font-weight: 700;
+}
+
+
+/* লোগো ইমেজের স্টাইল */
+.logo-img {
+
+    height: 45px;
+
+    width: auto;
+
+    vertical-align: middle;
+
+    border-radius: 8px;
 }
 
 
@@ -160,6 +176,35 @@ button {
     color: white;
 
     font-weight: 800;
+}
+
+
+/* ফুটারের লোগো */
+.footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    margin-bottom: 13px;
+}
+
+
+.footer-logo-img {
+
+    height: 35px;
+
+    width: auto;
+
+    border-radius: 6px;
 }
 
 
@@ -1781,6 +1826,19 @@ button {
         align-items: start;
 
         flex-direction: column;
+    }
+
+    /* ----- মোবাইলে লোগো সাইজ ----- */
+    .logo-img {
+        height: 35px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .footer-logo-img {
+        height: 28px;
     }
 
 }
